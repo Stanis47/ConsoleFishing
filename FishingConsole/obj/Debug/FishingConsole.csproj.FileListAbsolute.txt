@@ -1,0 +1,19 @@
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.exe.config
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.exe
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.pdb
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\bin\Debug\Engine.dll
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\bin\Debug\Engine.pdb
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.csprojAssemblyReference.cache
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.csproj.CoreCompileInputs.cache
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.csproj.CopyComplete
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.exe
+C:\Users\Stanis\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.pdb
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.exe.config
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.exe
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\bin\Debug\FishingConsole.pdb
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\bin\Debug\Engine.dll
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\bin\Debug\Engine.pdb
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.csprojAssemblyReference.cache
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.csproj.CopyComplete
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.exe
+C:\Users\unknown bird\source\repos\FishingNew\FishingConsole\obj\Debug\FishingConsole.pdb

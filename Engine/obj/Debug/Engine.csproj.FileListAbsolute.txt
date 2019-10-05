@@ -1,0 +1,11 @@
+C:\Users\Stanis\source\repos\FishingNew\Engine\obj\Debug\Engine.csprojAssemblyReference.cache
+C:\Users\Stanis\source\repos\FishingNew\Engine\obj\Debug\Engine.csproj.CoreCompileInputs.cache
+C:\Users\Stanis\source\repos\FishingNew\Engine\bin\Debug\Engine.dll
+C:\Users\Stanis\source\repos\FishingNew\Engine\bin\Debug\Engine.pdb
+C:\Users\Stanis\source\repos\FishingNew\Engine\obj\Debug\Engine.dll
+C:\Users\Stanis\source\repos\FishingNew\Engine\obj\Debug\Engine.pdb
+C:\Users\unknown bird\source\repos\FishingNew\Engine\bin\Debug\Engine.dll
+C:\Users\unknown bird\source\repos\FishingNew\Engine\bin\Debug\Engine.pdb
+C:\Users\unknown bird\source\repos\FishingNew\Engine\obj\Debug\Engine.csprojAssemblyReference.cache
+C:\Users\unknown bird\source\repos\FishingNew\Engine\obj\Debug\Engine.dll
+C:\Users\unknown bird\source\repos\FishingNew\Engine\obj\Debug\Engine.pdb
