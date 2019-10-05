@@ -9,13 +9,15 @@ namespace Engine.AdvancedMenu
 
         private Stack<IMenu> _menus = new Stack<IMenu>();
         private IMenu _currentMenu;
+        private bool canBeAddedToStack = true;
 
         public IMenu CurrentMenu
         {
             get => _currentMenu;
             set
             {
-                _menus.Push(_currentMenu);
+                if (canBeAddedToStack)
+                    _menus.Push(_currentMenu);
                 _currentMenu = value; 
             }
         }
@@ -29,16 +31,22 @@ namespace Engine.AdvancedMenu
 
         public void Show(IMenu menu)
         {
+            canBeAddedToStack = true;
+
             CurrentMenu = menu;
             _menuService.ShowMenu(_currentMenu);
+
             ExecuteSelected();
         }
 
         public void Back()
         {
+            canBeAddedToStack = false;
+
             var menuToShow = _menus.Pop();
             CurrentMenu = menuToShow;
             _menuService.ShowMenu(menuToShow);
+
             ExecuteSelected();
         }
 

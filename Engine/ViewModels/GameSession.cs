@@ -1,13 +1,12 @@
 ﻿using Engine.EventArgs;
 using Engine.Factories;
 using Engine.Models;
-using Engine.NPC;
 using System;
 using System.Collections.Generic;
 
 namespace Engine.ViewModels
 {
-    public class GameSession : BaseNotificationClass
+    public class GameSession
     {
         public Player CurrentPlayer { get; set; }
         public World CurrentWorld { get; set; }
