@@ -141,21 +141,21 @@ namespace Engine.Factories
             };
         }
 
-        public static Fish CreateFishByID(int speciesID)
+        public static List<Fish> CreateFishByID(params int[] speciesID)
         {
-            //List<Fish> result = new List<Fish>();
+            List<Fish> result = new List<Fish>();
 
-            //foreach (int ID in speciesID)
-            //{
-                Fish fish = _allFish.FirstOrDefault(fish => fish.SpeciesID == speciesID);
+            foreach (int ID in speciesID)
+            {
+                Fish fish = _allFish.FirstOrDefault(fish => fish.SpeciesID == ID);
 
-                //if (fish != null)
-                //{
-                   // result.Add(fish.Clone());
-                //}
-           // }
+                if (fish != null)
+                {
+                    result.Add(fish.Clone());
+                }
+            }
 
-            return fish.Clone();
+            return result;
         }
     }
 }

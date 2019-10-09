@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleViews\FishConsoleView.cs" />
+    <Compile Include="ConsoleViews\FishListConsoleView.cs" />
     <Compile Include="ConsoleViews\IConsoleView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

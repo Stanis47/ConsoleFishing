@@ -1,5 +1,7 @@
 ﻿using Engine;
 using Engine.AdvancedMenu;
+using Engine.Models;
+using Engine.Services;
 using Engine.ViewModels;
 using System;
 
@@ -9,13 +11,15 @@ namespace FishingConsole.ConsoleViews
     {
         private readonly FishViewModel _viewModel;
         private readonly MenuManager _menuManager;
+        private readonly IFishService _fishService;
 
         private Menu _actionsMenu;
 
-        public FishConsoleView(FishViewModel fishViewModel, MenuManager menuManager)
+        public FishConsoleView(MenuManager menuManager, IFishService fishService, Fish fish)
         {
-            _viewModel = fishViewModel;
             _menuManager = menuManager;
+            _fishService = fishService;
+            _viewModel = new FishViewModel(fish, _fishService);
             _actionsMenu = _viewModel.Actions;
             MenuOption backOption = new MenuOption(() => _menuManager.Back(), "BACK");
             _actionsMenu.AddOption(backOption);

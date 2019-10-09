@@ -17,11 +17,11 @@ namespace FishingConsole
         {
             IMenuService menuService = new ConsoleMenuService(2, 3);
             IFishService fishService = new FishService();
-
             MenuManager menuManager = new MenuManager(menuService);
-            Fish fish = FishFactory.CreateFishByID(1005);
-            FishViewModel fishViewModel = new FishViewModel(fish, fishService);
-            FishConsoleView view = new FishConsoleView(fishViewModel, menuManager);
+
+            List<Fish> fishList = FishFactory.CreateFishByID(1005, 1001, 1002, 1005, 1003, 1004);
+            //FishConsoleView view = new FishConsoleView(menuManager, fishService, fish);
+            FishListConsoleView view = new FishListConsoleView(menuManager, fishService, fishList);
             
             Menu menu = new Menu("Main Menu");
             Menu menu1 = new Menu("Secondary Menu");

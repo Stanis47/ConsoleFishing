@@ -78,8 +78,8 @@
     <Compile Include="Services\FishService.cs" />
     <Compile Include="Services\IFishService.cs" />
     <Compile Include="Services\IMenuService.cs" />
-    <Compile Include="Shared\MessageEventHandler.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\FishListViewModel.cs" />
     <Compile Include="ViewModels\FishViewModel.cs" />
     <Compile Include="ViewModels\GameSession.cs" />
     <Compile Include="ViewModels\IViewModel.cs" />
