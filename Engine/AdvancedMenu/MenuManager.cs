@@ -44,6 +44,7 @@ namespace Engine.AdvancedMenu
             canBeAddedToStack = true;
 
             CurrentMenu = actionBar;
+            CurrentMenu.ResetSelected();
             _menuService.ShowActionBar(actionBar);
 
             ExecuteSelected();

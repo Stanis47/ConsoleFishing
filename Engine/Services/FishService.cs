@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Engine.Services
 {
-    public class FishService
+    public class FishService : IFishService
     {
         private List<Fish> _catchedFish = new List<Fish>();
 

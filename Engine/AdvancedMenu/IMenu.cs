@@ -11,6 +11,7 @@ namespace Engine.AdvancedMenu
 
         void MoveUp();
         void MoveDown();
+        void ResetSelected();
         void AddOption(MenuOption option);
     }
 }

@@ -16,7 +16,8 @@ namespace FishingConsole
         static void Main(string[] args)
         {
             IMenuService menuService = new ConsoleMenuService(2, 3);
-            FishService fishService = new FishService();
+            IFishService fishService = new FishService();
+
             MenuManager menuManager = new MenuManager(menuService);
             Fish fish = FishFactory.CreateFishByID(1005);
             FishViewModel fishViewModel = new FishViewModel(fish, fishService);
@@ -35,6 +36,7 @@ namespace FishingConsole
             MenuOption option8 = new MenuOption(() => menuManager.Show(menu2), "Show Third Menu");
             MenuOption option7 = new MenuOption(() => menuManager.Back(), "Back");
             MenuOption option9 = new MenuOption(() => view.Show(), "Show Fish");
+            MenuOption exit = new MenuOption(() => Environment.Exit(0), "Exit");
 
             menu.AddOption(option1);
             menu.AddOption(option2);
@@ -42,6 +44,7 @@ namespace FishingConsole
             menu.AddOption(option4);
             menu.AddOption(option5);
             menu.AddOption(option6);
+            menu.AddOption(exit);
 
             menu1.AddOption(option1);
             menu1.AddOption(option2);

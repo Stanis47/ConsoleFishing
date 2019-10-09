@@ -5,15 +5,20 @@ using System;
 
 namespace FishingConsole.ConsoleViews
 {
-    public class FishConsoleView
+    public class FishConsoleView : IConsoleView
     {
         private readonly FishViewModel _viewModel;
         private readonly MenuManager _menuManager;
+
+        private Menu _actionsMenu;
 
         public FishConsoleView(FishViewModel fishViewModel, MenuManager menuManager)
         {
             _viewModel = fishViewModel;
             _menuManager = menuManager;
+            _actionsMenu = _viewModel.Actions;
+            MenuOption backOption = new MenuOption(() => _menuManager.Back(), "BACK");
+            _actionsMenu.AddOption(backOption);
         }
 
         public void Show()
@@ -38,10 +43,7 @@ namespace FishingConsole.ConsoleViews
                 ConsoleWriter.WriteLineCenter(lure.Name);
             }
 
-            Menu actionsMenu = _viewModel.Actions;
-            MenuOption backOption = new MenuOption(() => _menuManager.Back(), "BACK");
-            actionsMenu.AddOption(backOption);
-            _menuManager.ShowActionBar(actionsMenu);
+            _menuManager.ShowActionBar(_actionsMenu);
         }
     }
 }

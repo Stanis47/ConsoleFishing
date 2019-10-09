@@ -8,7 +8,7 @@ namespace Engine.ViewModels
     public class FishViewModel : BaseViewModel
     {
         private readonly Fish _fish;
-        private readonly FishService _fishService;
+        private readonly IFishService _fishService;
 
         public string Species => $"Species: {_fish.Species}";
         public string Name => _fish.Name;
@@ -20,7 +20,7 @@ namespace Engine.ViewModels
         public string[] Art => _fish.FishArt;
         public Menu Actions { get; }
 
-        public FishViewModel(Fish fish, FishService fishService)
+        public FishViewModel(Fish fish, IFishService fishService)
         {
             _fishService = fishService;
             _fish = fish;
