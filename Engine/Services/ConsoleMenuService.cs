@@ -59,7 +59,8 @@ namespace Engine.Services
             bool done = false;
             int cursorTop = 0;
             
-            ConsoleWriter.WriteLineCenter(menu.Title);
+            if (!asActionBar)
+                ConsoleWriter.WriteLineCenter(menu.Title);
             Console.WriteLine();
 
             if (asActionBar)

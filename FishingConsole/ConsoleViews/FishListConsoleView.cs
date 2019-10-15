@@ -1,18 +1,12 @@
 ﻿using Engine.AdvancedMenu;
 using Engine.Models;
 using Engine.Services;
-using Engine.ViewModels;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FishingConsole.ConsoleViews
 {
     public class FishListConsoleView : IConsoleView
     {
-        private readonly FishListViewModel _viewModel;
         private readonly MenuManager _menuManager;
         private readonly IFishService _fishService;
 
@@ -25,9 +19,12 @@ namespace FishingConsole.ConsoleViews
             
             foreach (var fish in fishList)
             {
-                MenuOption fishInfo = new MenuOption(() => ShowFishDetails(fish), $"{fish.Name}");
+                MenuOption fishInfo = new MenuOption(() => ShowFishDetails(fish), string.Format("{0, -25} {1, 10} KG", fish.Name, fish.Weight));
                 _fishMenu.AddOption(fishInfo);
             }
+
+            MenuOption backOption = new MenuOption(() => _menuManager.Back(), "BACK");
+            _fishMenu.AddOption(backOption);
         }
 
         public void Show()
